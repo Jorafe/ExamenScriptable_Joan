@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class ItemWeapon : MonoBehaviour
 {
-
     public ScriptableItem itemInfo;
 
     private SpriteRenderer spriteRenderer;
@@ -13,6 +12,7 @@ public class Item : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,7 @@ public class Item : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
+        InventaryManagerWeapons.instance.AddItem(itemInfo);
         Destroy(gameObject);
     }
 }

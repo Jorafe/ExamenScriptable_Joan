@@ -5,13 +5,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class InventaryManager : MonoBehaviour
+public class InventaryManagerWeapons : MonoBehaviour
 {
-    public  static InventaryManager instance;
+    public  static InventaryManagerWeapons instance;
 
     public ScriptableItem[] weapons;
     public TextMeshProUGUI[] weaponsNames;
-    public Image[] weaponScripts;
+    public TextMeshProUGUI[] weaponsPrice;
+    public Image[] weaponSprite;
 
     
 
@@ -35,11 +36,10 @@ public class InventaryManager : MonoBehaviour
             {
                 weapons[i] = item;
                 weaponsNames[i].text = item.itemName;
-                weaponScripts[i].sprite = item.itemSprite;
+                weaponSprite[i].sprite = item.itemSprite;
+                weaponsPrice[i].text = item.itemPrice;
 
-               
-
-
+    
                 return;
             }
         }

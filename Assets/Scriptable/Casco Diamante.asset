@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d54387ad50b4f3143859c208a812a1e3, type: 3}
-  m_Name: Casco
+  m_Name: Casco Diamante
   m_EditorClassIdentifier: 
-  itemName: Casco
+  itemName: Casco Diamante
   itemPrice: 35
   itemSprite: {fileID: 21300000, guid: 72a3003a5bc115e4ea35a1ee392b0fc2, type: 3}
